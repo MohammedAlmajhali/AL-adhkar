@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/appbar"
+android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/oval"
+        android:background="@color/bg_main"
+        android:theme="@style/ToolbarTheme"
+    >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/bg_main"
+                android:minHeight="20dp"
+                android:theme="@style/ToolbarTheme"
+
+
+                />
+
+            <TextView
+                android:drawableStart="@drawable/quran"
+                android:drawablePadding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/almarai_extrabold"
+                android:gravity="center"
+
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/say"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/almarai_extrabold"
+                    android:textSize="12sp"
+                    android:textColor="@color/textColor"
+
+                    />
+                <TextView
+                    android:fontFamily="@font/almarai_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aeah"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#6876fa"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
