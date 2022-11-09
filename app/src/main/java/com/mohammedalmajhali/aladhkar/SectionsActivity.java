@@ -11,16 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class SectionsActivity extends AppCompatActivity implements list_adhkar_fragment.onDhekrClicked {
 
-
-    private AdView mAdView;
 
     // معرف للازرار عشان ارسله الى الفراقمنت وهو هناك يعرف ايش البيانات اللي يجيب
     final static int
@@ -98,27 +91,9 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
         progressBar = findViewById(R.id.progress_adhkar);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         // نعرف القيمه اما MORNING = 0 او EVENING = 1
         Intent intent = getIntent();
         time = intent.getIntExtra("time", 0);
-
-
-
-
-
-
 
 
         counterClicked = new int[31];
@@ -136,7 +111,6 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
             tv_title.setText(R.string.morning);
         }
         progressBar.setMax(sumNumAdhkar);
-
 
 
         // نحط القيم في الدوائر الحمر
@@ -176,29 +150,9 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
 
         btn_back.setOnClickListener(v -> this.finish());
 
-
-        //*************************** اعلانات قوقل *************************
-
-        //********************************* اعلان قوقل **********************************
-
-
-                MobileAds.initialize(getBaseContext(), new OnInitializationCompleteListener() {
-                    @Override
-                    public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-                    }
-                });
-                mAdView = findViewById(R.id.section_adView);
-                AdRequest adRequest = new AdRequest.Builder().build();
-                mAdView.loadAd(adRequest);
-
-
-
-        //**************************************************************************************************
-
-        //****************************************************************
-
-
     }
+
+    
 
     void open_adkar_fragment(int from) {
         //  MORNING = 0 او EVENING = 1 نفتح الفراقمنت ونرسل لها الزر الذي تم الضغط عليه والوقت
@@ -228,10 +182,9 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
         }
 
 
-
         sum = 0;
         sum = 9 - sumOfThisSection(5, 10);
-        if (sum == 0 ) {
+        if (sum == 0) {
             //btn_evening_morning.setBackground(AppCompatResources.getDrawable(this, R.drawable.bg_blue_true));
             counter_evening_morning.setText("");
             counter_evening_morning.setBackground(AppCompatResources.getDrawable(this, R.drawable.check_compelete));
@@ -240,14 +193,10 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
         }
 
 
-
-
-
         sum = 0;
-        if (time == MainActivity.MORNING){
+        if (time == MainActivity.MORNING) {
             sum = 10 - sumOfThisSection(11, 16);
-        }
-        else {
+        } else {
             sum = 11 - sumOfThisSection(11, 16);
         }
 
@@ -261,21 +210,19 @@ public class SectionsActivity extends AppCompatActivity implements list_adhkar_f
         }
 
 
-        sum = 0 ;
-        sum = 6 - sumOfThisSection(17,18);
+        sum = 0;
+        sum = 6 - sumOfThisSection(17, 18);
         if (sum == 0) {
             //btn_no_god_except_Allah.setBackground(AppCompatResources.getDrawable(this, R.drawable.bg_morning_true));
             counter_no_god_except_Allah.setText("");
             counter_no_god_except_Allah.setBackground(AppCompatResources.getDrawable(this, R.drawable.check_compelete));
-        }else {
+        } else {
             counter_no_god_except_Allah.setText(String.valueOf(sum));
 
         }
 
 
-
-
-        sum = 0 ;
+        sum = 0;
         sum = 15 - sumOfThisSection(19, 23);
         if (sum == 0) {
             //btn_threes.setBackground(AppCompatResources.getDrawable(this, R.drawable.bg_blue_true));

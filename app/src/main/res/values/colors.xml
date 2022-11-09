@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_700">#00F1D4</color>
+    <color name="purple_500">#FF03DAC5</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_700">#FF03DAC5</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="numberOfDhekr">#006A69</color>
+    <color name="virtue_of_dhekr">#FF018786</color>
+
+    <color name="whiteTransparent">#ccFFFFFF</color>
+    <color name="blackTransparent">#55000000</color>
+
+    <color name="textColor">#666</color>
+
+
+    <color name="bg_main">#FDFDFF</color>
+    <color name="shadow2">#f3f3f3</color>
+    <color name="shadow1">#eaecfe</color>
+
 </resources>

@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">ALAdhkar</string>
+    <string name="app_name">أذكاري</string>
+    <string name="aeah">(فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ)</string>
+    <string name="aeah2">الَّذِينَ آمَنُواْ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللّهِ أَلاَ بِذِكْرِ اللّهِ تَطْمَئِنُّ الْقُلُوبُ</string>
+    <string name="aeah3">وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ الشَّمْسِ وَقَبْلَ غُرُوبِهَاُ</string>
+
+    <string name="say">قال الله تعالى:&#160;</string>
+    <string name="morning">أذكار الصباح</string>
+    <string name="evening">أذكار المساء</string>
+
+
+    <string name="quran">أيات قرانية</string>
+    <string name="evening_morning">أذكار (صباح - مساء)</string>
+    <string name="istiaah_and_basmalah.">الإستعاذة والبسمله</string>
+    <string name="no_god_except_Allah">لا إله الا أنت</string>
+    <string name="god_you_are_my_Lord">اللهم انت ربي</string>
+    <string name="Mohammad_is_the_messenger_of_Allah">الصلاة على نبينا محمد</string>
+    <string name="threes">تسبيح - حمد -استغفار</string>
+    <string name="generic">أذكار</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spaces"><![CDATA[  ]]></string>
+
+
+    <string name="click_on_the_dhekr">انقر على الذكر للقراءة</string>
+
+    <string name="time_alert_morning">موعد التنبيهات لأذكار الصباح (%2$s : %1$s)</string>
+    <string name="time_alert_evening">موعد التنبيهات لأذكار المساء (%2$s : %1$s)</string>
+
+
+    <string name="download_this_app">\n\n تطبيق (أذكاري) \n يمكنك تحميل التطبيق من متجر بلاي عبر هذا الرابط \n https://play.google.com/store/apps/details?id=com.mohammedalmajhali.aladhkar</string>
+    <string name="back">back</string>
+
 </resources>
